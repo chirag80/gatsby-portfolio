@@ -20,8 +20,9 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()} Chirag Patel. 
+      Copyright &copy; {new Date().getFullYear()} Chirag Patel
       <br />
+      <div style={{width:`100%`, marginTop:`5px`, }}>This site is hosted on Azure</div>
       <Flex
         sx={{
           justifyContent: `center`,
@@ -31,8 +32,7 @@ const Footer = () => {
           fontWeight: `semibold`,
           a: { color: `text` },
         }}
-      >
-        This site is hosted on Azure.
+      >        
         {` `}
         <Link
           aria-label="Link to the theme's GitHub repository"
