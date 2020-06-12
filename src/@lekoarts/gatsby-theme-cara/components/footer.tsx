@@ -10,6 +10,7 @@ const Footer = () => {
   }
 
   return (
+
     <Box as="footer" variant="footer">
       <button
         sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
@@ -19,7 +20,7 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()} Chirag Patel. All rights reserved.
+      Copyright &copy; {new Date().getFullYear()} Chirag Patel. 
       <br />
       <Flex
         sx={{
@@ -31,7 +32,7 @@ const Footer = () => {
           a: { color: `text` },
         }}
       >
-        <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
+        This site is hosted on Azure.
         {` `}
         <Link
           aria-label="Link to the theme's GitHub repository"
@@ -44,8 +45,8 @@ const Footer = () => {
         {` `}
         <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
           LekoArts
-        </Link>
-      </Flex>
+        </Link>     
+      </Flex>      
     </Box>
   )
 }
